@@ -9,7 +9,8 @@
     "tasks": "任务",
     "approvals": "审批",
     "settings": "设置",
-    "logs": "实现日志"
+    "logs": "实现日志",
+    "manual": "使用手册"
   },
   "connectionStatus": {
     "connected": "已连接",
@@ -561,5 +562,16 @@
       "loading": "正在加载更改日志...",
       "notFound": "找不到此版本的更改日志"
     }
+  },
+  "manual": {
+    "title": "使用手册",
+    "subtitle": "看板各页面的用途、操作步骤和使用规范",
+    "downloadPdf": "下载 PDF",
+    "contents": "目录",
+    "loading": "正在加载手册...",
+    "loadError": "手册加载失败。",
+    "cardTitle": "第一次使用看板？",
+    "cardDescription": "使用手册逐页讲解看板上每个功能，配有截图和审批文档的详细操作步骤。",
+    "open": "打开使用手册"
   }
 }

@@ -1,0 +1,125 @@
+/* Typography for the rendered user manual. Colors come from the dashboard theme variables. */
+.manual-content {
+  color: var(--text-primary);
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  max-width: 56rem;
+}
+
+.manual-content h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 0 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--interactive-primary);
+}
+
+.manual-content h2 {
+  font-size: 1.375rem;
+  font-weight: 600;
+  margin: 2.5rem 0 1rem;
+  padding-left: 0.75rem;
+  border-left: 4px solid var(--interactive-primary);
+  scroll-margin-top: 5rem;
+}
+
+.manual-content h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 1.75rem 0 0.75rem;
+}
+
+.manual-content p {
+  margin: 0.75rem 0;
+}
+
+.manual-content ul,
+.manual-content ol {
+  margin: 0.75rem 0;
+  padding-left: 1.5rem;
+}
+
+.manual-content ul {
+  list-style: disc;
+}
+
+.manual-content ol {
+  list-style: decimal;
+}
+
+.manual-content li {
+  margin: 0.25rem 0;
+}
+
+.manual-content li > ul,
+.manual-content li > ol {
+  margin: 0.25rem 0;
+}
+
+.manual-content strong {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.manual-content a {
+  color: var(--interactive-primary);
+  text-decoration: underline;
+}
+
+.manual-content code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  background: var(--surface-inset);
+  padding: 0.1rem 0.35rem;
+  border-radius: var(--radius-sm);
+}
+
+.manual-content blockquote {
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  border-left: 3px solid var(--interactive-primary);
+  background: var(--surface-inset);
+  color: var(--text-secondary);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.manual-content blockquote p {
+  margin: 0.25rem 0;
+}
+
+.manual-content hr {
+  border: none;
+  border-top: 1px solid var(--border-default);
+  margin: 2rem 0;
+}
+
+.manual-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.875rem;
+  display: block;
+  overflow-x: auto;
+}
+
+.manual-content th,
+.manual-content td {
+  border: 1px solid var(--border-default);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.manual-content th {
+  background: var(--surface-inset);
+  font-weight: 600;
+}
+
+.manual-content img {
+  display: block;
+  max-width: 100%;
+  margin: 1rem auto;
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  cursor: zoom-in;
+}

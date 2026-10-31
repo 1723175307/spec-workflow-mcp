@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import { useApi } from '../api/api';
 import { useWs } from '../ws/WebSocketProvider';
 
@@ -101,6 +102,34 @@ function Content() {
           <div className="text-sm text-[var(--text-muted)]">
             {approvals.length > 0 ? t('stats.approvals.awaiting') : t('stats.approvals.allClear')}
           </div>
+        </div>
+      </div>
+
+      {/* User Manual Card */}
+      <div className="bg-[var(--surface-panel)] border border-[var(--border-default)] rounded-lg p-4 flex flex-col sm:flex-row sm:items-center gap-4">
+        <div className="w-12 h-12 bg-[color-mix(in_srgb,var(--interactive-primary)_12%,transparent)] text-[var(--interactive-primary)] rounded-lg flex items-center justify-center flex-shrink-0">
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <div className="flex-1 min-w-0">
+          <h3 className="text-base font-medium text-[var(--text-primary)]">{t('manual.cardTitle', 'New to the dashboard?')}</h3>
+          <p className="text-sm text-[var(--text-muted)] mt-1">{t('manual.cardDescription')}</p>
+        </div>
+        <div className="flex items-center gap-2 flex-shrink-0">
+          <Link
+            to="/manual"
+            className="inline-flex items-center gap-2 px-4 py-2 bg-[var(--interactive-primary)] hover:opacity-90 text-white text-sm font-medium rounded-md transition-opacity"
+          >
+            {t('manual.open', 'Open the manual')}
+          </Link>
+          <a
+            href="/manual/manual.pdf"
+            download="spec-workflow 看板使用说明与操作手册.pdf"
+            className="inline-flex items-center gap-2 px-4 py-2 border border-[var(--border-default)] hover:bg-[var(--surface-hover)] text-[var(--text-secondary)] text-sm font-medium rounded-md transition-colors"
+          >
+            {t('manual.downloadPdf', 'Download PDF')}
+          </a>
         </div>
       </div>
 

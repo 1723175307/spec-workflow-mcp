@@ -9,7 +9,8 @@
     "tasks": "Tasks",
     "approvals": "Approvals",
     "settings": "Settings",
-    "logs": "Implementation Logs"
+    "logs": "Implementation Logs",
+    "manual": "User Manual"
   },
   "connectionStatus": {
     "connected": "Connected",
@@ -561,5 +562,16 @@
       "loading": "Loading changelog...",
       "notFound": "Changelog not found for this version"
     }
+  },
+  "manual": {
+    "title": "User Manual",
+    "subtitle": "What each dashboard page is for and how to use it, step by step",
+    "downloadPdf": "Download PDF",
+    "contents": "Contents",
+    "loading": "Loading manual...",
+    "loadError": "The manual could not be loaded.",
+    "cardTitle": "New to the dashboard?",
+    "cardDescription": "The user manual explains every page and button, with screenshots and step-by-step instructions for reviewing and approving documents.",
+    "open": "Open the manual"
   }
 }

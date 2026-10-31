@@ -14,6 +14,7 @@ import { LogsPage } from '../pages/LogsPage';
 import { ApprovalsPage } from '../pages/ApprovalsPage';
 import { SpecViewerPage } from '../pages/SpecViewerPage';
 import { SettingsPage } from '../pages/SettingsPage';
+import { ManualPage } from '../pages/ManualPage';
 import { NotificationProvider } from '../notifications/NotificationProvider';
 import { VolumeControl } from '../notifications/VolumeControl';
 import { useApi } from '../api/api';
@@ -264,6 +265,7 @@ function AppInner() {
                 <Route path="/logs" element={<LogsPage />} />
                 <Route path="/approvals" element={<ApprovalsPage />} />
                 <Route path="/settings" element={<SettingsPage />} />
+                <Route path="/manual" element={<ManualPage />} />
                 <Route path="*" element={<Navigate to="/" replace />} />
               </Routes>
             ) : (
